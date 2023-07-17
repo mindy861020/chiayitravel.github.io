@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    
+
+
+
+    <style>
+    .navbar {
+        background-color: black;
+    }
+    
+    .navbar-brand {
+        font-size: 25px;
+    }
+    
+    .title {
+        border-top-width: 20px;
+    }
+    
+    hr.style-one {
+        border: 0;
+        height: 5px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+
+    ul.nav li ul{
+
+
+        display: none ;
+
+    }
+
+    ul.nav li:hover > ul{
+        display: block ;
+    } 
+
+
+
+
+    
+    
+</style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+    <div class="row">
+        <div class="col-md-2"></div>
+
+        <nav class="navbar navbar-default col-md-12">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" style="color:white;">南故宮公公與太保寶寶的冒險之旅</a> </div>
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://120.113.173.160/ncyu-travel/ncyu-travel.html" style="color:white;" target=_self>首頁</a></li>
+                        <!--<li><a  style="color:white;" target="_blank">社區連結</a>
+
+                            <ul>
+
+                                <li><a href="https://taibao.cyhg.gov.tw/cp.aspx?n=B7E0652B10F73024&s=5654361B474B8EFF"  style="color:white;" >太保市後庄社區</a></li>
+
+                                <li><a href="https://taibao.cyhg.gov.tw/cp.aspx?n=B7E0652B10F73024&s=337EA9B16C7004DE" style="color:white;" >太保市港尾社區</a></li>
+                                <li><a href="https://taibao.cyhg.gov.tw/cp.aspx?n=B7E0652B10F73024&s=DD102593FDB1A032" style="color:white;" >太保市埤鄉社區</a></li>
+                            </ul>
+
+                        </li>-->
+                        <li><a  style="color:white;"  target="_blank">景點介紹</a>
+               <ul class="dropdown-menu">
+
+     <li><a href="index.html" style="color:white; background:black" >故宮南院</a></li>
+                                 <li><a href="back.html" style="color:white; background:black" >太保市後庄社區</a></li>
+
+                                 <li><a href="gangwei.html" style="color:white; background:black" >太保市港尾社區</a></li>
+                                 <li><a href="township.html" style="color:white; background:black" >太保市埤鄉社區</a></li>
+                             </ul>
+
+                        </li>
+
+
+
+                        <li><a href="ncyu-travel-map.html" style="color:white;" target="_blank">交通資訊</a></li>
+                        <li><a href="taibau-history.html" style="color:white;" target="_blank">太保歷史</a></li>
+                        <li><a href="ncyu-travel-vlog.html" style="color:white;" target="_blank">VLOG</a></li>
+                        
+
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+
+
+
+
+
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                 
+
+                    <div class="item active">
+                     <a href="index.html" target="_blank"><img src="20171027_180117_0032.jpg" alt="" style="width:1500px;  height:500px;">
+                     </a></div>
+                     <div class="item">
+                         <a href="township.html" target="_blank"><img src="IMG_6293.jpg" alt="" style="width:1500px;height:500px; ">
+                         </a></div>
+                         <div class="item">
+                             <a href="gangwei.html" target="_blank"><img src="IMG_1226.JPG" alt="" style="width:1500px;height:500px; ">
+                             </a></div>
+                             <div class="item">
+                                 <a href="back.html" target="_blank"><img src="IMG_1244.JPG" alt="" style="width:1500px; height:500px;">
+                                 </a></div>
+                                 <div class="item">
+                                     <a href="back.html" target="_blank"><img src="IMG_1246.JPG" alt="" style="width:1500px; height:500px;"></a>
+                                 </div>
+                                 <div class="item">
+                                     <a href="https://www.facebook.com/11Yongbo/" target="_blank">
+                                         <img src="IMG_1106.JPG" alt="" style="width:1500px; height:500px;">
+
+                                     </a></div>
+                                     <div class="item">
+                                         <a href="index.html" target="_blank"><img src="IMG_1262.JPG" alt="" style="width:1500px;height:500px; ">
+                                         </a></div>
+                                         <div class="item">
+                                             <a href="index.html" target="_blank"><img src="IMG_1263.JPG" alt="" style="width:1500px;height:500px; ">
+                                             </a></div>
+                                         </div>
+
+
+                                         <div class="control-btn">
+                                            <a href="#slideshow" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hiddden="true"></span> </a>
+
+                                            <a href="#slideshow" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hiddden="true"></span> </a>
+                                        </div>
+
+
+
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#slideshow" data-slide-to="0"></li>
+                                            <li data-target="#slideshow" data-slide-to="1"></li>
+                                            <li data-target="#slideshow" data-slide-to="2"></li>
+                                            <li data-target="#slideshow" data-slide-to="3"></li>
+                                            <li data-target="#slideshow" data-slide-to="4"></li>
+                                            <li data-target="#slideshow" data-slide-to="5"></li>
+                                            <li data-target="#slideshow" data-slide-to="6"></li>
+                                            <li data-target="#slideshow" data-slide-to="7"></li>
+                                        </ol>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail">
+                                            <!--<a href="http://south.npm.gov.tw/zh-tw" target="_blank">-->
+                                                <img src="20171027_180117_0032.jpg" alt=""
+                                                style="width:200px; height:200px;"></a>
+                                                <div class="caption">
+                                                    <h3>故宮南院</h3>
+                                                    <p><!--<a href="http://south.npm.gov.tw/zh-tw"></a>-->
+                                                    國立故宮博物院南部院區，簡稱故宮南院，定位為「亞洲藝術文化博物館」，位於臺灣嘉義縣太保市，鄰近高鐵嘉義站以及蒜頭糖廠，主要展示品為亞洲藝術文化，另設有主題庭園、人工湖和旅館。</p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="thumbnail">
+                                                <!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=21D6FA8545C24E5A" target="_blank">-->
+                                                <img src="https://pic.pimg.tw/happy078/1482823479-1186651022_n.jpg?v=1482823480" alt=""
+                                                 style="width:200px; height:200px;"></a>
+                                                 <div class="caption">
+                                                    <h3>嘉義後庄保安宮</h3>
+                                                    <p><!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=21D6FA8545C24E5A"></a>-->簡介：
+
+                                                        溯自始祖楊氏由福建漳州府、平和縣、婆蔗社崙仔厝隨鄭王來臺，為求航海平安，迎請大帝護航渡海，定居太保溝後奉大帝於宅。迨至乾隆十年勘地今之庄北，以竹為架，茅草覆之而祀大帝，名曰保安宮。由於大帝神威顯赫，德被蒼生，揚族代代繁衍臻八百餘戶，地靈人傑，英才輩出，如溝前王得祿官拜水陸提督，為感念大帝庇佑，捐獻私財，於道光十四年，將簡陋之草廟改建為磚造，至咸豐十一年戴萬生亂起，本庄揚和尚率眾抗拒，族人遭兵燹之災，四處流散，殘剩卅餘戶，固守家園。
+
+                                                    </p>
+                                                    
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="thumbnail">
+                                               <!-- <a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=A3CEA41881C3F805" target="_blank">-->
+                                                	<img src="https://crgis.rchss.sinica.edu.tw/temples/ChiayiCounty/taibau/1001012-GBG/6e2f4fdd5bae591689c0.JPG/view/++widget++form.widgets.image/@@download/%E6%B8%AF%E4%BF%9D%E5%AE%AE%E5%A4%96%E8%A7%80.JPG" alt=""
+                                                 style="width:200px; height:200px;"></a>
+                                                 <div class="caption">
+
+                                                    <h3>嘉義港尾港保宮</h3>
+                                                    <p><!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=A3CEA41881C3F805"></a>-->清嘉慶年間 黃氏宗族由廣東省潮洲府饒平縣榮前鄉花園社等厝祠堂，渡海來台，暫居黃厝港，定居地廣人稀瘴氣頗重屢感不順，無計可施，遂重返祖籍，恭迎三山國王福德正神來此鎮奉，老小事獲平安五穀豐收漸入佳境，迄黃磐降世，長大成人後，允文允武智勇雙全，上京面試以自創刀法魁星踢斗，承蒙皇上賞識受封武解元，並蒙國母恩召回京師受封國舅，閔浙海陸提督將軍，聞悉此事特來黃厝港堪察地理形勢，得知黃厝港乃水牛穴。 </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="thumbnail">
+                                                <!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=8AA40644E5CC5A0C" target="_blank">-->
+                                                <img src="data:image/jpeg;base64,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" alt=""
+                                                 style="width:200px; height:200px;"></a>
+                                                 <div class="caption">
+                                                    <h3>嘉義埤鄉聖恩宮
+                                                    </h3>
+                                                    <p><!--<a href="https://taibao.cyhg.gov.tw/News_Content.aspx?n=8A33013523400F35&sms=8A1EBDEB5129D8BD&s=8AA40644E5CC5A0C"></a> --> 本宮乃由浙江省普陀山不肯去觀音院之觀世音菩薩原靈前來開闢。奉三菩薩指示，於民國七十八年、七十九年、八十回不肯去觀音院鎮殿中尊菩薩蒞宮常駐，是以本宮之觀世音菩薩與普陀山之淵源乃一脈相連。本宮觀世音菩薩自稱「參吧哪耶」三菩薩，乃唐宋時西夏高麗國玉童子修得正果。菩薩降示詩文，自署法號「妙蓮」、「三音」。康熙、道光至第二次世界大戰期間，菩薩於埤麻腳舊庄游、黃等家三度降乩濟世，並在游家家堂留下香火。光復後菩薩雲游四海普渡眾生。</p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <p>
+
+
+
+                                        <p>
+                                            
+                                            
+                                         
+                                         
+                                         <div class="col-md-9">
+                                             <hr class="style-one">
+                                             
+                                             <div class="page-header">
+
+                                                <h1><span style="font-family:fantasy;font-size:1.2cm;">美食與景點住宿</span></h1>
+
+                                                
+
+                                            </div>
+                                            
+                                            
+
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="box">
+                                                    <a href="https://www.facebook.com/11Yongbo/" target="_blank"><img src="https://www.hs-foods.com.tw/go168/ezcatfiles/hs-foods/img/pictures/1/104303_S_DSCN0607.jpg" alt="" style="width:300px; height:200px;"></a>
+                                                    <h3>
+                                                        勇伯地瓜酥
+                                                    </h3>
+                                                    <p>612 嘉義市
+                                                    嘉義縣太保市後庄10-6號</p>
+                                                    <p>
+                                                        電話：05 371 6767
+                                                        <P>
+                                                            營業時段：9:00 - 17:00
+                                                            
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4">
+                                                        
+
+                                                        <div class="box">
+                                                            <a href="https://zh.wikipedia.org/wiki/%E9%AD%9A%E5%AF%AE%E9%81%BA%E5%9D%80" target="_blank"><img src="data:image/jpeg;base64,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" alt="" style="width:300px; height:200px;"></a>
+                                                            <h3>
+                                                                魚寮遺址
+                                                            </h3>
+                                                            <p>太保市高鐵大道與64縣道交叉口</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6 col-md-4">
+                                                      
+                                                       
+                                                       
+                                                        
+                                                        <div class="box">
+                                                            <a href="https://www.booking.com/hotel/tw/huashe-chiayi-branch.zh-tw.html?aid=1288258;label=metagha-link-localuniversalTW-hotel-1906607_dev-desktop_los-1_bw-13_dow-Wednesday_defdate-1_room-0_lang-zh_curr-TWD_gstadt-2_rateid-0;sid=8c669f6285e51b59954f4162d84d9974;checkin=2018-01-24;checkout=2018-01-25;ucfs=1;srpvid=09e739f51c5e00f6;srepoch=1515658475;highlighted_blocks=190660704_92841953_0_1_0;all_sr_blocks=190660704_92841953_0_1_0;bshb=2;room1=A%2CA;hpos=1;hapos=1;dest_type=city;dest_id=900055011;srfid=7bfc23060115492fbb30c353edd82a0c36205641X1;from=searchresults;highlight_room=#hotelTmpl" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KbLkXw3xTJRvGu8Clzof2TlNX_KMks8fCyKPWG5MhZ1_n7n45MFv_J5yOhky_swihxk&usqp=CAU" alt="" style="width:300px; height:200px;"></a>
+                                                            <h3>
+                                                                故宮南院住宿推薦
+                                                            </h3>
+                                                            <p>樺舍商旅-嘉義館
+                                                             <P>
+                                                               地址：嘉義縣朴子市祥和三路西段23號
+                                                               <p> 電話： 05 320 6088
+                                                               </div>
+                                                               
+                                                           </div>
+                                                           
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+    <!--<div class="col-md-3">
+   
+    <hr class="style-one">
+   
+     
+   
+    
+     <div class="box">
+
+
+
+             <br>
+
+                        <a href="https://read01.com/nLmxM.html" style="text-decoration:none;color:black;" target="_blank">
+                            <h1><span style="font-family:fantasy;font-size:1.5cm;"><p>  </p> </span></h1>
+                        </a>
+                    </div>
+   
+   </div>
+-->
+
+
+
+
+
+
+<marquee direction="right" height="100" scrollamount="10" behavior="alternate" bgcolor="#000000">
+        <font color="white" size="4" >國立嘉義大學
+
+        <p>
+         <p>
+            四朵花兩枝草
+            <p>
+            嘉義市新民路580號</font></marquee>
+            
+            
+
+            
+
+
+            
+            
+            
+        </body>
+
+
+
+
+
+        </html>
